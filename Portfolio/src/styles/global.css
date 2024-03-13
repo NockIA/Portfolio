@@ -3,20 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* ------------------- Texts ------------------- */
+/* ------------------- Colors ------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
+:root {
+  --primary-color: #f9f2e8;
+  --darker-primary-color: #f5e2c9;
+  --black: #181818;
 }
 
 /* ------------------- Containers ------------------- */
@@ -42,10 +34,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ------------------- Colors ------------------- */
+/* ------------------- Texts ------------------- */
 
-:root {
-  --primary-color: #f9f2e8;
-  --darker-primary-color: #f5e2c9;
-  --black: #181818;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------- Others ------------------- */
+
+.separation {
+  width: calc(100vw - 20vw);
+  height: 1px;
+  background-color: var(--black);
 }

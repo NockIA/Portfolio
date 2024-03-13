@@ -1,0 +1,12 @@
+.down-chevron {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 2rem;
+    object-fit: contain;
+    transform: translateX(-50%);
+}
+
+.container-home-page {
+    padding: 0 10vw;
+}

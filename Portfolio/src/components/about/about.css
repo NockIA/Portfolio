@@ -1,9 +1,93 @@
+/* ------------------- Responsive ------------------- */
+
+@media screen and (max-width: 700px) {
+  .container-profile-picture {
+    position: absolute;
+    top: 0px;
+    right: 5vw;
+    width: 100px;
+    height: 100px;
+  }
+  .container-informations h1 {
+    font-size: 34px;
+    width: min-content;
+  }
+  .container-about-page {
+    margin-top: 4.5rem;
+  }
+  .container-informations {
+    width: 100%;
+  }
+  .container-descriptions p {
+    width: calc(100vw - 20vw);
+    font-size: 18px;
+  }
+  .profile-picture {
+    width: 40vw;
+    max-width: 200px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  .container-profile-picture {
+    width: 250px;
+    height: 250px;
+  }
+  .container-informations h1 {
+    font-size: 34px;
+  }
+  .container-about-page {
+    margin-top: 4.5rem;
+  }
+
+  .container-descriptions p {
+    font-size: 18px;
+  }
+  .profile-picture {
+    width: 50vw;
+    max-width: 750px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container-profile-picture {
+    max-width: 400px;
+    max-height: 400px;
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .container-informations h1 {
+    font-size: 64px;
+  }
+  .container-about-page {
+    margin-top: 6.5rem;
+  }
+  .container-informations .container-descriptions p {
+    font-size: 24px;
+  }
+  .profile-picture {
+    width: 50vw;
+    max-width: 750px;
+    object-fit: contain;
+  }
+}
+
 /* ------------------- Containers ------------------- */
 
+.container-global-about {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-about-page {
+  position: relative;
+  width: 100vw;
   justify-content: space-between;
-  padding: 0rem 5rem;
-  margin-top: 6.5rem;
 }
 
 .container-about-page .container-informations {
@@ -21,10 +105,18 @@
   justify-content: center;
   background-color: var(--darker-primary-color);
   border-radius: 999px;
-  width: 28vw;
-  height: 28vw;
-  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+}
+
+.container-about-page .contact-button {
+  gap: 1rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.container-about-page .contact-button:hover {
+  cursor: pointer;
 }
 
 /* ------------------- Texts ------------------- */
@@ -32,28 +124,9 @@
 .container-informations h1 {
   font-family: "PlayFair Display", sans-serif;
   font-weight: 900;
-  font-size: 64px;
-}
-
-.container-informations .container-descriptions p {
-  font-size: 24px;
 }
 
 /* ------------------- Others ------------------- */
-
-.profile-picture {
-  width: 50vw;
-  object-fit: contain;
-}
-
-.container-about-page .contact-button {
-  gap: 1rem;
-  align-items: center;
-}
-
-.container-about-page .contact-button:hover {
-  cursor: pointer;
-}
 
 .container-about-page .contact-button .contact-link {
   color: var(--black);
