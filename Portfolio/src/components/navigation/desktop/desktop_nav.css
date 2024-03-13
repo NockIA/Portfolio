@@ -1,0 +1,44 @@
+.nav-container {
+  justify-content: space-between;
+  padding: 0.2rem 5rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 999;
+}
+
+.nav-container .home-icon {
+  width: 2rem;
+  object-fit: contain;
+}
+
+.nav-container .home-icon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.nav-container .home-icon:not(:hover) {
+  transform: scale(1);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.nav-container .links-container {
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.links-container .link-nav {
+  font-family: "PlayFair Display", sans-serif;
+  color: var(--black);
+  opacity: 0.9;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.link-nav:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
