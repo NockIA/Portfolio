@@ -1,3 +1,5 @@
+/* ------------------- Containers ------------------- */
+
 .nav-container {
   justify-content: space-between;
   padding: 0.2rem 5rem;
@@ -7,22 +9,7 @@
   z-index: 999;
 }
 
-.nav-container .home-icon {
-  width: 2rem;
-  object-fit: contain;
-}
-
-.nav-container .home-icon:hover {
-  transform: scale(0.9);
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-
-.nav-container .home-icon:not(:hover) {
-  transform: scale(1);
-  cursor: pointer;
-  transition: 0.5s ease;
-}
+/* ------------------- Texts ------------------- */
 
 .nav-container .links-container {
   gap: 2rem;
@@ -41,4 +28,23 @@
 .link-nav:hover {
   text-decoration: underline;
   opacity: 1;
+}
+
+/* ------------------- Others ------------------- */
+
+.nav-container .home-icon {
+  width: 2rem;
+  object-fit: contain;
+}
+
+.nav-container .home-icon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.nav-container .home-icon:not(:hover) {
+  transform: scale(1);
+  cursor: pointer;
+  transition: 0.5s ease;
 }

@@ -1,0 +1,77 @@
+/* ------------------- Containers ------------------- */
+
+.container-about-page {
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  margin-top: 6.5rem;
+}
+
+.container-about-page .container-informations {
+  gap: 2rem;
+}
+
+.container-informations .container-descriptions {
+  gap: 1rem;
+  max-width: 40vw;
+}
+
+.container-profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darker-primary-color);
+  border-radius: 999px;
+  width: 28vw;
+  height: 28vw;
+  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ------------------- Texts ------------------- */
+
+.container-informations h1 {
+  font-family: "PlayFair Display", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.container-informations .container-descriptions p {
+  font-size: 24px;
+}
+
+/* ------------------- Others ------------------- */
+
+.profile-picture {
+  width: 50vw;
+  object-fit: contain;
+}
+
+.container-about-page .contact-button {
+  gap: 1rem;
+  align-items: center;
+}
+
+.container-about-page .contact-button:hover {
+  cursor: pointer;
+}
+
+.container-about-page .contact-button .contact-link {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact-button img {
+  width: 2rem;
+  object-fit: contain;
+}
+
+.contact-button:hover img {
+  transform: translateX(0.5rem);
+  transition: 1s ease;
+}
+
+.contact-button:not(:hover) img {
+  transform: translateX(0rem);
+  transition: 1s ease;
+}
